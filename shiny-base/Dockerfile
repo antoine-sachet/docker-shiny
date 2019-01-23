@@ -14,4 +14,5 @@ tidy
 # Misc useful packages
 RUN install2.r -s \
 config \
-logging
+logging \
+glue
