@@ -10,6 +10,6 @@ libmysqlclient-dev
  
 
 # https://github.com/r-dbi/RMariaDB
-RUN install2.r -s \
+RUN install2.r -s --error \
 DBI \
 RMariaDB
