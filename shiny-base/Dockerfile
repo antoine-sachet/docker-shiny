@@ -13,4 +13,5 @@ tidy
 
 # Misc useful packages
 RUN install2.r -s \
-config
+config \
+logging
