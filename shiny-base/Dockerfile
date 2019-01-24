@@ -12,7 +12,7 @@ shinyjs
 RUN install2.r -s --error \
 dplyr \
 readr \
-tidy
+tidyr
 
 # Misc useful packages
 RUN install2.r -s --error \
