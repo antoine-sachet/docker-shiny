@@ -19,3 +19,11 @@ RUN install2.r -s --error \
 config \
 logging \
 glue
+
+# Plotting packages
+RUN install2.r -s --error \
+ECharts2Shiny \
+ggplot2 \
+RColorBrewer \
+scales \
+viridis
