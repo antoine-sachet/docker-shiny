@@ -12,11 +12,14 @@ shinyjs
 RUN install2.r -s --error \
 dplyr \
 readr \
-tidyr
+tidyr \
+forcats
 
 # Misc useful packages
 RUN install2.r -s --error \
 config \
+# necessary for dataTableOutput
+DT \
 logging \
 glue
 
