@@ -11,15 +11,18 @@ shinyjs
 # Minimal tidyverse
 RUN install2.r -s --error \
 dplyr \
+forcats \
+purrr \
 readr \
-tidyr \
-forcats
+tidyr
 
 # Misc useful packages
 RUN install2.r -s --error \
+# basic yml parser for config
 config \
 # necessary for dataTableOutput
 DT \
+# 2 packages to streamline the logging
 logging \
 glue
 
