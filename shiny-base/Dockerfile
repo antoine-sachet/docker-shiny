@@ -33,3 +33,6 @@ ggplot2 \
 RColorBrewer \
 scales \
 viridis
+
+# useful for cloud health checks
+RUN apt update && apt install -y curl
