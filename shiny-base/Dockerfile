@@ -1,4 +1,4 @@
-FROM r-base:3.5.2
+FROM rocker/r-ver:3.5.2
 LABEL maintainer="Antoine Sachet <antoine.sac@gmail.com>" \
 org.label-schema.vcs-url="https://github.com/antoine-sachet/docker-shiny"
 
