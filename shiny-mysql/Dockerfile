@@ -5,7 +5,8 @@ org.label-schema.vcs-url="https://github.com/antoine-sachet/docker-shiny"
 # MySQL client lib
 RUN apt update -qq \
 && apt install -y \
-libmariadb-dev
+libmariadb-client-lgpl-dev \
+libmysqlclient-dev
  
 
 # https://github.com/r-dbi/RMariaDB
