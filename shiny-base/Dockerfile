@@ -6,7 +6,9 @@ org.label-schema.vcs-url="https://github.com/antoine-sachet/docker-shiny"
 RUN install2.r -s --error \
 shiny \
 shinythemes \
-shinyjs
+shinyjs \
+shinyWidgets
+
 
 # Minimal tidyverse
 RUN install2.r -s --error \
