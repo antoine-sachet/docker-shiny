@@ -7,8 +7,8 @@ RUN install2.r -s --error \
 shiny \
 shinythemes \
 shinyjs \
-shinyWidgets
-
+shinyWidgets \
+shinydashboard
 
 # Minimal tidyverse
 RUN install2.r -s --error \
