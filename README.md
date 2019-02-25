@@ -40,6 +40,12 @@ CMD ["r", "-e", "shiny::runApp('.', port=3838, host='0.0.0.0', launch.browser=F)
 * Built on `rocker-rstudio` rather than `rocker:r-ver`, but using the same version.
 * **Not meant for deployment** but useful for development in the same controlled environment using `rstudio` in the browser.
 
+## shinyproxy-base
+
+* Containerised shinyproxy, suitable to set up a shinyproxy server. Simply add your yml config. See www.shinyproxy.io
+* Dockerfile adapted from openalanalytics's [shinyproxy-config-examples](https://github.com/openanalytics/shinyproxy-config-examples/tree/master/02-containerized-docker-engine)
+* Not a suitable base for shiny apps as it does not contain shiny.
+
 ## LICENSE
 
 These Dockerfiles are under the MIT license. RStudio and Shiny are trademarks of RStudio, Inc.
