@@ -2,6 +2,10 @@ FROM rocker/rstudio:3.5.2
 LABEL maintainer="Antoine Sachet <antoine.sac@gmail.com>" \
 org.label-schema.vcs-url="https://github.com/antoine-sachet/docker-shiny"
 
+## Dev tools
+RUN apt update -qq && apt install -y libxml2-dev
+RUN install2.r -s --error devtools roxygen2
+
 ## CONTENT OF shiny-base/Dockerfile
 
 # Generic shiny app requirements
@@ -39,7 +43,7 @@ scales \
 viridis
 
 # useful for cloud health checks
-RUN apt update -qq && apt install -y curl
+RUN apt install -y curl
 
 ## CONTENT OF shiny-mysql/Dockerfile
 

@@ -38,6 +38,7 @@ CMD ["r", "-e", "shiny::runApp('.', port=3838, host='0.0.0.0', launch.browser=F)
 ## shiny-dev
 
 * Built on `rocker-rstudio` rather than `rocker:r-ver`, but using the same version.
+* Contains shiny-base + shiny-mysql + rstudio + devtools + roxygen2
 * **Not meant for deployment** but useful for development in the same controlled environment using `rstudio` in the browser.
 
 ## shinyproxy-base
