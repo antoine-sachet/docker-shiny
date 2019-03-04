@@ -4,7 +4,7 @@ org.label-schema.vcs-url="https://github.com/antoine-sachet/docker-shiny"
 
 ## Dev tools
 RUN apt update -qq && apt install -y libxml2-dev
-RUN install2.r -s --error devtools roxygen2
+RUN install2.r -s --error devtools roxygen2 testthat
 
 ## CONTENT OF shiny-base/Dockerfile
 
