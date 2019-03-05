@@ -3,7 +3,12 @@ LABEL maintainer="Antoine Sachet <antoine.sac@gmail.com>" \
 org.label-schema.vcs-url="https://github.com/antoine-sachet/docker-shiny"
 
 ## Dev tools
-RUN apt update -qq && apt install -y libxml2-dev
+# System requirements
+RUN apt update -qq && apt install -y \
+libxml2-dev \
+libgit2-dev \
+zlib1g-dev
+
 RUN install2.r -s --error devtools roxygen2 testthat
 
 ## CONTENT OF shiny-base/Dockerfile
