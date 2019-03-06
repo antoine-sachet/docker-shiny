@@ -42,3 +42,9 @@ RColorBrewer \
 scales \
 viridis \
 && rm -rf /tmp/downloaded_packages/
+
+# My shiny helper library
+RUN install2.r -s --error remotes \
+&& installGithub.r antoine-sachet/shiny-helpr \
+&& rm -rf /tmp/downloaded_packages/
+
