@@ -1,4 +1,4 @@
-FROM asachet/shiny-base:R3.5.2-stable-v1.2
+FROM asachet/shiny-base:R3.5.2-stable-v1.3
 LABEL maintainer="Antoine Sachet <antoine.sac@gmail.com>" \
 org.label-schema.vcs-url="https://github.com/antoine-sachet/docker-shiny"
 
