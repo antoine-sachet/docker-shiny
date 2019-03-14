@@ -65,4 +65,4 @@ RMariaDB
 
 # My shiny helpr package
 RUN install2.r -s --error remotes \
-&& RUN installGithub.r antoine-sachet/shiny-helpr
+&& installGithub.r antoine-sachet/shiny-helpr
