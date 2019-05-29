@@ -1,4 +1,4 @@
-FROM asachet/shiny-mysql:R3.5.2-stable-v1.3
+FROM asachet/shiny-mysql:R3.5.2-stable-v1.4
 
 # Installing the image magick library + corresponding R package
 
