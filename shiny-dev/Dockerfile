@@ -7,9 +7,10 @@ org.label-schema.vcs-url="https://github.com/antoine-sachet/docker-shiny"
 RUN apt update -qq && apt install -y \
 libxml2-dev \
 libgit2-dev \
-zlib1g-dev
+zlib1g-dev \
+libcurl4-openssl-dev
 
-RUN install2.r -s --error devtools roxygen2 testthat
+RUN install2.r -s --error devtools roxygen2 testthat remotes
 
 ## CONTENT OF shiny-base/Dockerfile
 
@@ -48,7 +49,7 @@ scales \
 viridis
 
 # useful for cloud health checks
-RUN apt install -y curl
+RUN apt install -y curl libcurl4-openssl-dev
 
 ## CONTENT OF shiny-mysql/Dockerfile
 

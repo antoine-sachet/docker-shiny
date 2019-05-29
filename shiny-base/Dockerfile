@@ -3,7 +3,7 @@ LABEL maintainer="Antoine Sachet <antoine.sac@gmail.com>" \
 org.label-schema.vcs-url="https://github.com/antoine-sachet/docker-shiny"
 
 # useful for cloud health checks
-RUN apt update -qq && apt install -y curl
+RUN apt update -qq && apt install -y curl libcurl4-openssl-dev
 
 # Generic shiny app requirements
 RUN install2.r -s --error \
