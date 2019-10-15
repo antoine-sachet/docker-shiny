@@ -67,3 +67,8 @@ RMariaDB
 # My shiny helpr package
 RUN install2.r -s --error remotes \
 && installGithub.r antoine-sachet/shiny-helpr
+
+# shinytest
+
+RUN install2.r -s --error shinytest &&
+  r -e 'shinytest::installDependencies()'
