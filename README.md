@@ -24,6 +24,8 @@ CMD ["r", "-e", "shiny::runApp('.', port=3838, host='0.0.0.0', launch.browser=F)
 
 ## shiny-base
 
+[![](https://images.microbadger.com/badges/version/asachet/shiny-base.svg)](https://microbadger.com/images/asachet/shiny-base "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/asachet/shiny-base.svg)](https://microbadger.com/images/asachet/shiny-base "Get your own image badge on microbadger.com")
+
 * Built on the most stable R image, `rocker/r-ver`
 * Contains `shiny` and common packages like `shinydashboard`, `shinyWidgets`, `shinythemes`, `DT` for `dataTableOutput`, etc
 * Contains a minimal `tidyverse` and `ggplot`-verse 
@@ -31,11 +33,15 @@ CMD ["r", "-e", "shiny::runApp('.', port=3838, host='0.0.0.0', launch.browser=F)
 
 ## shiny-mysql
 
+[![](https://images.microbadger.com/badges/version/asachet/shiny-mysql.svg)](https://microbadger.com/images/asachet/shiny-mysql "Get your own version badge on microbadger.com")  [![](https://images.microbadger.com/badges/image/asachet/shiny-mysql.svg)](https://microbadger.com/images/asachet/shiny-mysql "Get your own image badge on microbadger.com")
+
 * Built on `shiny-base` for robustness
 * Adds system libraries and R packages necessary to connect to `MySQL` databases
 * NOTE: relies on `RMariaDB` instead of the _legacy_ `RMySQL` package!
 
 ## shiny-dev
+
+[![](https://images.microbadger.com/badges/version/asachet/shiny-dev.svg)](https://microbadger.com/images/asachet/shiny-dev "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/asachet/shiny-dev.svg)](https://microbadger.com/images/asachet/shiny-dev "Get your own image badge on microbadger.com")
 
 * Built on `rocker-rstudio` rather than `rocker:r-ver`, but using the same version.
 * Contains shiny-base + shiny-mysql + rstudio + devtools + roxygen2
