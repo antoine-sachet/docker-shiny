@@ -3,7 +3,7 @@
 These images are a stable and convenient base to package shiny apps, typically with a Dockerfile looking like:
 
 ```Dockerfile
-FROM asachet/shiny-base:R3.5.2-stable-v1.1
+FROM asachet/shiny-base:3.6.1
 
 # Add packages specific to this app
 RUN install2.r -s --error \
@@ -42,6 +42,8 @@ CMD ["r", "-e", "shiny::runApp('.', port=3838, host='0.0.0.0', launch.browser=F)
 * **Not meant for deployment** but useful for development in the same controlled environment using `rstudio` in the browser.
 
 ## shinyproxy-base
+
+No longer living in this repository as R version tags did not make sense for this image.
 
 * Containerised shinyproxy, suitable to set up a shinyproxy server. Simply add your yml config. See www.shinyproxy.io
 * Dockerfile adapted from openalanalytics's [shinyproxy-config-examples](https://github.com/openanalytics/shinyproxy-config-examples/tree/master/02-containerized-docker-engine)
